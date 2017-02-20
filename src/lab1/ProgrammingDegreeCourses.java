@@ -15,13 +15,12 @@ public abstract class ProgrammingDegreeCourses{
     private String courseName;
     private String courseNumber;
     private double credits;
-    //private College college;
-    //private String prerequisites;
+    private String prerequisites;
     
     public String getCourseName() {
         return courseName;
     }
-
+        //fix JOptionPane--create an object and method to output error messages --remember single responsiblity rule
        public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
@@ -44,25 +43,16 @@ public abstract class ProgrammingDegreeCourses{
         this.courseNumber = courseNumber;
     }
 
-    //public double getCredits() {
-      //  return credits;
-    //}
-
    public abstract void setCredits(double credits); 
-    //{
-//        if(credits < 0.5 || credits > 4.0) {
-//            JOptionPane.showMessageDialog(null,
-//                    "Error: credits must be in the range 0.5 to 4.0");
-//            System.exit(0);
-//        }
-//        this.credits = credits;
-//    }
-       
-//    public String getPrerequisites() {
-//        return prerequisites;
-//    }
-//
-//    public void setPrerequisites(String prerequisites) {
-//        this.prerequisites = prerequisites;
-//    }
+   
+    public String getPrerequisites() {
+        return prerequisites;
+    }
+
+    public void setPrerequisites(String prerequisites) {
+        if(prerequisites == null || prerequisites.length() == 0) {
+            prerequisites = "none";
+        }
+        this.prerequisites = prerequisites;
+    }
 }

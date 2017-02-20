@@ -7,8 +7,6 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class IntroJavaCourse extends ProgrammingDegreeCourses{
-    //private String courseName;
-    //private String courseNumber;
     private double credits;
 
     public IntroJavaCourse(String courseName, String courseNumber) {
