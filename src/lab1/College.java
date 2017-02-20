@@ -21,6 +21,7 @@ public class College {
 
     public void addProgrammingCourseToCatalog( ProgrammingDegreeCourses course) {
         courseCatalog.add(course);
+        System.out.println("YOu have added " + course);
     }
     
     
