@@ -5,7 +5,6 @@
  */
 package lab1;
 
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -50,7 +49,7 @@ public abstract class ProgrammingDegreeCourses{
         return prerequisites;
     }
 
-    public void setPrerequisites(String prerequisites) {
+    public final void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
             prerequisites = "none";
         }
