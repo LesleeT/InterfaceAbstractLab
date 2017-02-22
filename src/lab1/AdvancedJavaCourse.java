@@ -25,4 +25,8 @@ public class AdvancedJavaCourse extends ProgrammingDegreeCourses{
         }
         this.credits = credits;
     }
+    
+    public double getCredits(){
+        return credits;
+    }
 }
